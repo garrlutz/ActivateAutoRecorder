@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ActivateAutoReorder.ControlUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ActivateAutoReorder"
+             mc:Ignorable="d" 
+             Height="24" Width="24" Loaded="UserControl_Loaded" Margin="0" Background="Transparent">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Colors.xaml"/>
+                <ResourceDictionary Source="Styles/Styles.xaml"/>
+                <ResourceDictionary Source="Resources/Images.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Button Background="Transparent" Name="btn_Command" BorderThickness="0" BorderBrush="Transparent">
+            <Button.Content>
+                <Grid>
+                    <Rectangle x:Name="ToggleIndicator" Fill="#FFA0A0A0" Height="16" Stroke="#212121" Width="24" RadiusY="7" RadiusX="7" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-1,0"/>
+                    <Ellipse x:Name="ToggleCircle" Fill="#FF212121" HorizontalAlignment="Center" Height="12" Stroke="Transparent" VerticalAlignment="Center" Width="12" Margin="0"/>
+                </Grid>
+            </Button.Content>
+            <Button.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <Label Content="Activate Auto Reorder" FontWeight="Bold" FontSize="12"/>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+    </Grid>
+
+</UserControl>
