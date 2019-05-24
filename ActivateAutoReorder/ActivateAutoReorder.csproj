@@ -79,6 +79,7 @@
     <Compile Include="Converters\ResourceToMediaImageConverter.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GYBGrid\GYBGrid.cs" />
     <Compile Include="Styles\StylesController.cs">
       <SubType>Code</SubType>
     </Compile>
